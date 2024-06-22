@@ -1,15 +1,41 @@
-type Props = {Firstname:String , Lastname:String , Favoritegame:String}
+import { useState } from "react"
 
-function TitleLabel({Firstname , Lastname , Favoritegame}: Props) {
+function TitleLabel() {
+  const [users , setUsers] = useState([
+    {
+      userId : 1 ,
+      firstname : "arshia" ,
+      lastname : "sadati"
+    },
+    {
+      userId : 2 ,
+      firstname : "ali" ,
+      lastname : "rezaei"
+    },
+    {
+      userId : 3 ,
+      firstname : "ahmad" ,
+      lastname : "alavi"
+    },
+    {
+      userId : 4 ,
+      firstname : "hossein" ,
+      lastname : "mahdavi"
+    },
+    {
+      userId : 5 ,
+      firstname : "mohammad" ,
+      lastname : "khosravi" ,
+    },
+  ])
   return (
-    <div>
-        <h1>
-            {Firstname} {Lastname}
-        </h1>
-        <p>
-            {Favoritegame}
-        </p>
-    </div>
+    <>
+      <ul>
+        {users.map((user) => (
+          <li>{user.firstname}</li>
+        ))}
+      </ul>
+    </>
   )
 }
 
