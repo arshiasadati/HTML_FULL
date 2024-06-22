@@ -1,0 +1,24 @@
+main{
+    direction: rtl;
+    display: flex;
+
+}
+.matlab1{
+    flex: 1;
+    position: relative;
+}
+.image1{
+    height: 200px;
+    position: absolute;
+}
+.title1{
+    position: absolute;
+    font-size: 50px;
+    right: 400px;
+}
+.span1{
+    position: absolute;
+}
+.chekide{
+    position: absolute;
+}

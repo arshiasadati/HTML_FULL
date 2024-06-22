@@ -1,0 +1,25 @@
+body{
+    direction: rtl;
+}
+.box{
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    top: 200px ;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.badge{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    top: -15px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    right: 0;
+
+}

@@ -1,0 +1,65 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #f0f2f5;
+}
+
+header {
+    background: #001529;
+    height: 50px;
+}
+
+.root {
+    display: flex;
+    height: calc(100% - 50px);
+}
+
+.root aside {
+    width: 259px;
+    background: #fff;
+    height: 100%;
+}
+
+.root main {
+    flex: 1;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+.page-header {
+    height: 122px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.26) inset;
+}
+
+.content {
+    padding: 30px;
+}
+
+.content .card {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 0;
+}
+
+aside .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside .nav-list .item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+aside .nav-list .item span{
+    margin-left: 5px;
+}
+
+aside .nav-list .item.active {
+    background: #e6f7ff;
+    border-right: 2px solid #1890ff;
+    color: #1890ff;
+}

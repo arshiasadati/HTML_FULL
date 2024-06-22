@@ -1,0 +1,9 @@
+GreatThan = $gt
+LessThan = $lt 
+Equal = $eq or nothing ({age:20})
+NotEqual = $ne 
+GreatThanEqual = $gte
+LessThanEqual = $lte
+_________________________________________________________________________________________________________________
+Or = $or
+And = $and
