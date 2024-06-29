@@ -6,7 +6,7 @@ const MinesButton = ({}: Props) => {
 const [count, setCount] = useState(0)
   return (
     <div>
-        <h1>{count}</h1>
+        <h4>{count}</h4>
         <button style={{backgroundColor : "red"}} onClick={() => setCount(count + 1)}>
             Click On Me To +
         </button>

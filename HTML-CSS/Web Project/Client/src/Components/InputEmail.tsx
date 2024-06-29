@@ -10,6 +10,11 @@ function InputEmail() {
         id="exampleFormControlInput1"
         placeholder="name@example.com"
       />
+      <span>
+        <button type="button" className="btn btn-primary">
+        Submit
+        </button>
+      </span>
     </div>
   );
 }
