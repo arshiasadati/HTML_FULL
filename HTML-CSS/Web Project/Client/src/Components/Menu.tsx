@@ -10,13 +10,7 @@ function Menu() {
                     <Link className="nav-link" to={"/"}>Home</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to={"register"}>Register</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link className="nav-link" to={"button"}>Button</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link className="nav-link" to={"email"}>Email</Link>
+                    <Link className="nav-link" to={"province"}>Province</Link>
                     </li>
                 </ul>
             </div>
