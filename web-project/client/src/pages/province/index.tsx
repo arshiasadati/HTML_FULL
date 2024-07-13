@@ -10,7 +10,7 @@ import CustomLayout from "../../components/CustomLayout";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { DeleteOutlined } from "@ant-design/icons";
+import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 
 type ProvinceData = {
   _id: string;
@@ -61,7 +61,7 @@ function ProvincePage() {
       title: "ویرایش",
       render: (_, record) => (
         <Link to={`/province/${record._id}`} style={{ textDecoration: "none" }}>
-          ویرایش
+          <EditOutlined style={{color : "black" , fontSize : 20}}/>
         </Link>
       ),
     },
@@ -76,7 +76,7 @@ function ProvincePage() {
               await handleDelete(record._id);
             }}
           >
-            <DeleteOutlined />
+            <DeleteOutlined style={{color : "black" , fontSize : 20}}/>
           </Popconfirm>
         </Tooltip>
       ),

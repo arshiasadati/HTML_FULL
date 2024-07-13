@@ -39,16 +39,16 @@ function ProvinceFormPage() {
 
   const handleFinish = async (values: ProvinceForm) => {
     try {
-      const newValues = { ...values, _id: key };
-      if (key !== "new") {
+      if (key === "new") {
         await axios.post(
-          "http://localhost:3000/provinces/updateProvince",
-          newValues
+          "http://localhost:3000/provinces/addprovince", values
         );
       } else {
         await axios.post(
-          "http://localhost:3000/provinces/addProvince",
-          newValues
+          "http://localhost:3000/provinces/updateProvince", {
+            id : key,
+            title : values.title
+          }
         );
       }
 

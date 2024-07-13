@@ -37,12 +37,10 @@ router.post("/addProvince", async (req: Request, res: Response) => {
 });
 
 router.post("/updateProvince", async (req: Request, res: Response) => {
-  const inputValue = req.body;
+  const { id } = req.body
+  const { title } = req.body 
 
-  const resProvince = await ProvinceModel.findByIdAndUpdate(
-    inputValue.id,
-    inputValue
-  );
+  const resProvince = await ProvinceModel.findByIdAndUpdate(id, { title });
 
   res.send(resProvince);
 });
