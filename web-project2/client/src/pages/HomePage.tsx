@@ -6,6 +6,7 @@ function HomePage() {
       <div>
         <div className="home-page-card-1">
           <img src={image} alt="Image" className="home-page-card-1-img" />
+          
         </div>
       </div>
     </CustomLayout>
