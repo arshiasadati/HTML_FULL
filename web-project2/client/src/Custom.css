@@ -9,9 +9,61 @@
     
 } */
 
-
-.Main-body-home {
+/* .Main-body-home {
     width: 100vw;
     height: 100vh;
     background-color: aqua;
+    direction: rtl;
+    position: absolute;
+}
+
+.Home-navbar-head {
+    width: 80vw;
+    height: 10vh;
+    background-color: red;
+    position: relative;
+    right: 10vw;
+    top: 5vh;
+} */
+
+.main-body-home {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    direction: rtl;
+    position: absolute;
+    display: flex;
+}
+
+.home-navbar-head {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    justify-content: left;
+}
+
+.sidebar-home {
+    width: 10vw;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+}
+
+.logo-image-main-home {
+    height: 100%;
+    background-color: white;
+}
+
+.liongaming-text-main-header-home {
+    color: black;
+}
+
+.logo-image-main-home-box {
+    position: relative ;
 }
